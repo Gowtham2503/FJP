@@ -6,5 +6,7 @@ public class FrogJumpFRQ
   {
     this.goalDistance=gpalDistance;
     this.maxHops=maxHops;
+    
+    //Work at home!
   }
 }
