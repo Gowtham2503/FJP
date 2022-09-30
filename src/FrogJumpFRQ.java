@@ -21,7 +21,7 @@ public class FrogJumpFRQ
   public boolean simulate()
   {
 	  int position=0;
-	  int increment=0;
+	  int increment=0; /*No need for this variable; we can directly call hopDistance()!*/
 	  
   	for(int x=1;x<=maxHops;x++)
   	{
@@ -42,16 +42,12 @@ public class FrogJumpFRQ
   public double runSimulations(int num)
   {
 	  int success=0;
-	  int fail=0;
+	  /*No need for fail variable as we are only counting success*/
 	  for(int x=0;x<num;x++)
 	  {
 		  if(simulate())
 		  {
 			  success++;
-		  }
-		  else
-		  {
-			  fail++;
 		  }
 	  }
 	  return((double)success/num);
