@@ -9,6 +9,8 @@ public class FrogJumpFRQ
     this.maxHops=maxHops;
   }
   
+  /*We will make up a scenario that the frog jump range is from -10 to 40*/
+  /*Our own implementation!*/
   public int hopDistance()
   {
 	  int answer=(int)(Math.random()*51-10);
